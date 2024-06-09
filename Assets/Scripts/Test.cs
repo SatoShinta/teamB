@@ -8,6 +8,7 @@ public class Test : MonoBehaviour
     void Start()
     {
         // testtest
+        // sato2
     }
 
     // Update is called once per frame
