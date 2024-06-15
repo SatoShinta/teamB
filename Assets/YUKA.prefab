@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4422353297836961885}
   - component: {fileID: 3780035333999474184}
   - component: {fileID: -1080533158885594970}
-  - component: {fileID: 1743476232244212493}
   - component: {fileID: 923207752605766671}
+  - component: {fileID: 3753417679047289807}
   m_Layer: 0
   m_Name: YUKA
   m_TagString: Untagged
@@ -132,22 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1743476232244212493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4190686876057416865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d4c1967a6ba0b24eb230a2e46291383, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newSprite:
-  - {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  - {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
-  - {fileID: 21300000, guid: 4fe5dbeaa8e656144bc05a6ecd7e11d0, type: 3}
 --- !u!50 &923207752605766671
 Rigidbody2D:
   serializedVersion: 4
@@ -175,3 +159,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3753417679047289807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190686876057416865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4c1967a6ba0b24eb230a2e46291383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSprite:
+  - {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  - {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  - {fileID: 21300000, guid: 4fe5dbeaa8e656144bc05a6ecd7e11d0, type: 3}
