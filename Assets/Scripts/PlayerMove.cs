@@ -5,13 +5,14 @@ using static UnityEditor.PlayerSettings;
 
 public class PlayerMove : MonoBehaviour
 {
-    [SerializeField, Header("player‚ÌˆÚ“®‘¬“x")] float _speed = 0;
-    Vector3 _position;
-    Vector2 _move;
+   // [SerializeField, Header("player‚ÌˆÚ“®‘¬“x")] float _speed = 0;
+    //Vector3 _position;
+    //Vector2 _move;
+
     // Start is called before the first frame update
     void Start()
     {
-        _position = transform.position;
+       // _position = transform.position;
     }
 
     // Update is called once per frame

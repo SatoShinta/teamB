@@ -6,10 +6,11 @@ using UnityEngine.Tilemaps;
 public class YUKAcontroller : MonoBehaviour
 {
     [SerializeField, Header("•Ï‰»Œã‚ÌŒ©‚½–Ú")] Sprite[] newSprite;
-    int counter = 0;
+    public bool playerInHole;
+    public int counter;
 
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
         {
@@ -21,7 +22,8 @@ public class YUKAcontroller : MonoBehaviour
                 counter++;
                 if(counter == newSprite.Length)
                 {
-                    counter = 2;
+                    counter = 1;
+                    playerInHole = true;
                 }
             }
         }
