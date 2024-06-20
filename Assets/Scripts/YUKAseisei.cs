@@ -12,6 +12,7 @@ public class YUKAseisei : MonoBehaviour
         {
             for(int yi = -4; yi < 5; yi++)
             {
+                
                 Instantiate(YUKA, new Vector3(xi,yi,0), Quaternion.identity);
             }
         }
