@@ -1,15 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEditor.PlayerSettings;
 
 public class PlayerMove : MonoBehaviour
 {
     private Animator animator = null;
     private int counter = 0;
 
-   // [SerializeField, Header("player‚ÌˆÚ“®‘¬“x")] float _speed = 0;
+    // [SerializeField, Header("player‚ÌˆÚ“®‘¬“x")] float _speed = 0;
     //Vector3 _position;
     //Vector2 _move;
 
@@ -17,7 +13,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-       // _position = transform.position;
+        // _position = transform.position;
     }
 
     // Update is called once per frame
@@ -26,34 +22,53 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
         {
             animator.SetInteger("Direction", 2);
-            transform.Translate(0,1,0);
+            animator.SetBool("Up", true);
+            transform.Translate(0, 1, 0);
             counter++;
         }
-    
+        else
+        {
+            animator.SetBool("Up", false);
+        }
 
-        if(Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
+
+        if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
         {
             animator.SetInteger("Direction", 1);
-            transform.Translate(0,-1,0);
+            animator.SetBool("Down", true);
+            transform.Translate(0, -1, 0);
             counter++;
-         
         }
-     
+        else
+        {
+            animator.SetBool("Down", false);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
         {
-            animator.SetInteger("Direction", 3);
-            transform.Translate(-1,0,0);
-            transform.localScale = new Vector3(-1,1,1);
+            animator.SetInteger("Direction", 4);
+            animator.SetBool("Right2", true);
+            transform.Translate(-1, 0, 0);
+            transform.localScale = new Vector3(1, 1, 1);
         }
-      
+        else
+        {
+            animator.SetBool("Right2", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
         {
             animator.SetInteger("Direction", 3);
-            transform.Translate(1,0,0);
-            transform.localScale = new Vector3(1,1,1);
+            animator.SetBool("Right", true);
+            transform.Translate(1, 0, 0);
+            transform.localScale = new Vector3(1, 1, 1);
         }
-     
+        else
+        {
+            animator.SetBool("Right", false);
+        }
+
 
 
     }
