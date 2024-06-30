@@ -7,7 +7,6 @@ public class YUKAcontroller : MonoBehaviour
 {
     [SerializeField, Header("•Ï‰»Œã‚ÌŒ©‚½–Ú")] Sprite[] newSprite;
     [SerializeField] GameObject player;
-    [SerializeField] GameObject spawner;
     public Sprite nomal;
     public bool playerInHole;
     public int counter;
@@ -18,8 +17,8 @@ public class YUKAcontroller : MonoBehaviour
 
     private void Start()
     {
-        GameObject obj = GameObject.Find("Player");
-        playerState = obj.GetComponent<PlayerState>();
+       // GameObject obj = GameObject.Find("Player");
+        playerState = player.GetComponent<PlayerState>();
         henkouSprite = gameObject.GetComponent<SpriteRenderer>();
     }
 

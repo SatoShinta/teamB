@@ -8,10 +8,11 @@ public class PlayerState : MonoBehaviour
     public GameObject spawner;
     private GameObject[] objArray;
     private Animator animator = null;
-    private PlayerMove Player;
+    private BoxCollider2D Collider2d;
+    private PlayerMove playerMove;
     private float gameOverTimer;
     public bool gameOver = false;
-    public SpriteRenderer playerRenderer;
+    SpriteRenderer playerRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -19,27 +20,32 @@ public class PlayerState : MonoBehaviour
         //objArrayにGroundタグを持ったオブジェクト達を配列に格納させる
         objArray = GameObject.FindGameObjectsWithTag("Ground");
         animator = GetComponent<Animator>();
-        Player = GetComponent<PlayerMove>();
+        Collider2d = GetComponent<BoxCollider2D>();
+        playerMove = GetComponent<PlayerMove>();
         playerRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if(Player.enabled == false)
+        if(Collider2d.enabled == false)
         {
             Debug.Log(gameOver);
             gameOverTimer += Time.deltaTime;
             Debug.Log(gameOverTimer);
-            if (gameOverTimer >= 1f)
+            if (gameOverTimer >= 0.6f)
             {
                 GameOver();
             }
         }
 
-        if(gameOver == true && gameOverTimer >= 1.4f)
+        if (gameOverTimer >= 1f)
         {
             Spawn();
+            gameOverTimer = 0f;
         }
+
+
+
     }
 
 
@@ -62,7 +68,8 @@ public class PlayerState : MonoBehaviour
                     animator.SetBool("Down", false);
                     animator.SetBool("Right2", false);
                     animator.SetBool("Right", false);
-                    Player.enabled = false;
+                    Collider2d.enabled = false;
+                    playerMove.enabled = false;
                 }
             }
         }
@@ -70,7 +77,6 @@ public class PlayerState : MonoBehaviour
 
     public void GameOver()
     {
-        Destroy(gameObject);
         Debug.LogWarning("ヤラレチャッタ");
         animator.SetBool("GameOver", false);
         gameOver = true;
@@ -78,9 +84,10 @@ public class PlayerState : MonoBehaviour
 
     public void Spawn()
     {
-        Instantiate(player, spawner.transform.position, spawner.transform.rotation);
+        transform.position = spawner.transform.position;
         gameOver = false;
-        Player.enabled = true;
+        Collider2d.enabled = true;
+        playerMove.enabled = true;
         Debug.Log("umakuitta");
     }
 }
