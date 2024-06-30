@@ -5,12 +5,16 @@ using UnityEngine;
 public class PlayerState : MonoBehaviour
 {
     private GameObject[] objArray;
+    private Animator animator = null;
+    private PlayerMove Player;
 
     // Start is called before the first frame update
     void Start()
     {
         //objArrayにGroundタグを持ったオブジェクト達を配列に格納させる
         objArray = GameObject.FindGameObjectsWithTag("Ground");
+        animator = GetComponent<Animator>();
+        Player = GetComponent<PlayerMove>();
     }
 
 
@@ -28,12 +32,23 @@ public class PlayerState : MonoBehaviour
                 //playerの下にあるオブジェクトがobjに格納されているものと同じ場合
                 if (collision.gameObject == obj)
                 {
-                    //このオブジェクトを破壊する
-                    Destroy(gameObject);
-                    Debug.LogWarning("ヤラレチャッタ");
-                    break;
+                    animator.SetBool("GameOver", true);
+                    animator.SetBool("Up", false);
+                    animator.SetBool("Down", false);
+                    animator.SetBool("Right2", false);
+                    animator.SetBool("Right", false);
+                    Player.enabled = false;
+                  break;
+                    
                 }
             }
         }
+    }
+
+    private void GameOver()
+    {
+        Destroy(gameObject);
+        Debug.LogWarning("ヤラレチャッタ");
+        animator.SetBool("GameOver", true);
     }
 }
