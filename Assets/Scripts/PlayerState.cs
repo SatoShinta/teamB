@@ -7,6 +7,7 @@ public class PlayerState : MonoBehaviour
     private GameObject[] objArray;
     private Animator animator = null;
     private PlayerMove Player;
+    public bool gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,11 @@ public class PlayerState : MonoBehaviour
         objArray = GameObject.FindGameObjectsWithTag("Ground");
         animator = GetComponent<Animator>();
         Player = GetComponent<PlayerMove>();
+    }
+
+    private void Update()
+    {
+        
     }
 
 
@@ -45,10 +51,11 @@ public class PlayerState : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         Destroy(gameObject);
         Debug.LogWarning("ƒ„ƒ‰ƒŒƒ`ƒƒƒbƒ^");
-        animator.SetBool("GameOver", true);
+        animator.SetBool("GameOver", false);
+        gameOver = true;
     }
 }
