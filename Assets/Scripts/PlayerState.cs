@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
+    [SerializeField] GameObject player;
+    public GameObject spawner;
     private GameObject[] objArray;
     private Animator animator = null;
     private PlayerMove Player;
-    public bool gameOver;
+    private float gameOverTimer;
+    public bool gameOver = false;
+    public SpriteRenderer playerRenderer;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +20,26 @@ public class PlayerState : MonoBehaviour
         objArray = GameObject.FindGameObjectsWithTag("Ground");
         animator = GetComponent<Animator>();
         Player = GetComponent<PlayerMove>();
+        playerRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        
+        if(Player.enabled == false)
+        {
+            Debug.Log(gameOver);
+            gameOverTimer += Time.deltaTime;
+            Debug.Log(gameOverTimer);
+            if (gameOverTimer >= 1f)
+            {
+                GameOver();
+            }
+        }
+
+        if(gameOver == true && gameOverTimer >= 1.4f)
+        {
+            Spawn();
+        }
     }
 
 
@@ -44,8 +63,6 @@ public class PlayerState : MonoBehaviour
                     animator.SetBool("Right2", false);
                     animator.SetBool("Right", false);
                     Player.enabled = false;
-                  break;
-                    
                 }
             }
         }
@@ -57,5 +74,13 @@ public class PlayerState : MonoBehaviour
         Debug.LogWarning("ƒ„ƒ‰ƒŒƒ`ƒƒƒbƒ^");
         animator.SetBool("GameOver", false);
         gameOver = true;
+    }
+
+    public void Spawn()
+    {
+        Instantiate(player, spawner.transform.position, spawner.transform.rotation);
+        gameOver = false;
+        Player.enabled = true;
+        Debug.Log("umakuitta");
     }
 }

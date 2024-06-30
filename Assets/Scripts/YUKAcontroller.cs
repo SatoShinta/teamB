@@ -6,6 +6,8 @@ using UnityEngine.Tilemaps;
 public class YUKAcontroller : MonoBehaviour
 {
     [SerializeField, Header("•Ï‰»Œã‚ÌŒ©‚½–Ú")] Sprite[] newSprite;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject spawner;
     public Sprite nomal;
     public bool playerInHole;
     public int counter;
@@ -25,9 +27,7 @@ public class YUKAcontroller : MonoBehaviour
     {
       if(playerState.gameOver == true)
         {
-            henkouSprite.sprite = nomal;
-            counter = 0;
-            playerInHole = false;
+            Nomal();
         }   
     }
 
@@ -49,5 +49,12 @@ public class YUKAcontroller : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void Nomal()
+    {
+        henkouSprite.sprite = nomal;
+        counter = 0;
+        playerInHole = false;
     }
 }
