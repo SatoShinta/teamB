@@ -4,7 +4,7 @@ public class PlayerMove : MonoBehaviour
 {
     private Animator animator = null;
     private int counter = 0;
-    private float timer = 0;  
+    private float timer = 0;
 
     // [SerializeField, Header("player‚ÌˆÚ“®‘¬“x")] float _speed = 0;
     //Vector3 _position;
@@ -21,7 +21,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= 0.2f)
+        if (timer >= 0.2f)
         {
             if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
             {
@@ -77,10 +77,5 @@ public class PlayerMove : MonoBehaviour
                 animator.SetBool("Right", false);
             }
         }
-
-       
-
-
-
     }
 }
