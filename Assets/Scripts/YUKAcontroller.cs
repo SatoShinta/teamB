@@ -17,17 +17,18 @@ public class YUKAcontroller : MonoBehaviour
 
     private void Start()
     {
-       // GameObject obj = GameObject.Find("Player");
-        playerState = player.GetComponent<PlayerState>();
+        GameObject obj = GameObject.Find("Player");
+        playerState = obj.GetComponent<PlayerState>();
         henkouSprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-      if(playerState.gameOver == true)
+
+        if (playerState != null && playerState.gameOver == true)
         {
             Nomal();
-        }   
+        }
     }
 
 
@@ -50,7 +51,7 @@ public class YUKAcontroller : MonoBehaviour
         }
     }
 
-    private void Nomal()
+    public void Nomal()
     {
         henkouSprite.sprite = nomal;
         counter = 0;

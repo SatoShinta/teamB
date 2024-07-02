@@ -14,6 +14,7 @@ public class PlayerState : MonoBehaviour
     private bool goal = false;
     private int treasureCounter;
     SpriteRenderer playerRenderer;
+    YUKAcontroller[] yukaController;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,14 @@ public class PlayerState : MonoBehaviour
         Collider2d = GetComponent<BoxCollider2D>();
         playerMove = GetComponent<PlayerMove>();
         playerRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        //YUKAcontroller‚ðŽæ“¾‚µ‚Äyukacontroller”z—ñ‚ÉŠi”[‚·‚é
+        yukaController = new YUKAcontroller[objArray.Length];
+        for (int i = 0; i < objArray.Length; i++)
+        {
+            yukaController[i] = objArray[i].GetComponent<YUKAcontroller>();
+        }
+
 
         Collider2d.enabled = true;
         playerMove.enabled = true;
@@ -48,7 +57,8 @@ public class PlayerState : MonoBehaviour
             gameOverTimer = 0f;
         }
 
-        if(treasureCounter >= 3)
+
+        if (treasureCounter >= 3)
         {
             gameClear = true;
             if (gameClear == true && goal == true)
@@ -57,6 +67,12 @@ public class PlayerState : MonoBehaviour
                 playerMove.enabled = false;
                 animator.SetBool("Right", false);
             }
+        }
+        else if (treasureCounter < 3 && goal == true)
+        {
+            Invoke("DelayedNomal", 0.1f);
+            playerMove.enabled = false;
+            animator.SetBool("Right", false);
         }
 
 
@@ -118,5 +134,20 @@ public class PlayerState : MonoBehaviour
         Collider2d.enabled = true;
         playerMove.enabled = true;
         Debug.Log("umakuitta");
+    }
+
+    private void DelayedNomal()
+    {
+        goal = false;
+        foreach (YUKAcontroller yuka1 in yukaController)
+        {
+            if (yuka1 != null)
+            {
+                yuka1.Nomal();
+            }
+        }
+        transform.position = spawner.transform.position;
+        Debug.Log("‚à‚¤ˆê‰ñ");
+        playerMove.enabled = true;
     }
 }
