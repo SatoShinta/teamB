@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class YUKAcontroller : MonoBehaviour
 {
     [SerializeField, Header("•Ï‰»Œã‚ÌŒ©‚½–Ú")] Sprite[] newSprite;
-    [SerializeField] GameObject player;
+   // [SerializeField] GameObject player;
     public Sprite nomal;
     public bool playerInHole;
     public int counter;
