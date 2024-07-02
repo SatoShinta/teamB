@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour
@@ -12,6 +10,9 @@ public class PlayerState : MonoBehaviour
     private PlayerMove playerMove;
     private float gameOverTimer;
     public bool gameOver = false;
+    private bool gameClear = false;
+    private bool goal = false;
+    private int treasureCounter;
     SpriteRenderer playerRenderer;
 
     // Start is called before the first frame update
@@ -23,11 +24,14 @@ public class PlayerState : MonoBehaviour
         Collider2d = GetComponent<BoxCollider2D>();
         playerMove = GetComponent<PlayerMove>();
         playerRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        Collider2d.enabled = true;
+        playerMove.enabled = true;
     }
 
     private void Update()
     {
-        if(Collider2d.enabled == false)
+        if (Collider2d.enabled == false)
         {
             Debug.Log(gameOver);
             gameOverTimer += Time.deltaTime;
@@ -42,6 +46,17 @@ public class PlayerState : MonoBehaviour
         {
             Spawn();
             gameOverTimer = 0f;
+        }
+
+        if(treasureCounter >= 3)
+        {
+            gameClear = true;
+            if (gameClear == true && goal == true)
+            {
+                Debug.Log("gameclear");
+                playerMove.enabled = false;
+                animator.SetBool("Right", false);
+            }
         }
 
 
@@ -73,7 +88,21 @@ public class PlayerState : MonoBehaviour
                 }
             }
         }
+
+
+        if (collision.gameObject.CompareTag("Treasure"))
+        {
+            treasureCounter++;
+            Debug.Log(treasureCounter.ToString());
+        }
+
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            goal = true;
+        }
     }
+
+
 
     public void GameOver()
     {
