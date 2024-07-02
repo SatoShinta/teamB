@@ -48,7 +48,7 @@ public class PlayerState : MonoBehaviour
             Debug.Log(gameOver);
             gameOverTimer += Time.deltaTime;
             Debug.Log(gameOverTimer);
-            if (gameOverTimer >= 0.6f)
+            if (gameOverTimer >= 0.3f)
             {
                 GameOver();
             }
