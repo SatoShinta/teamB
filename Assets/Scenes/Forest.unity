@@ -172,6 +172,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &17104194
@@ -348,6 +349,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &37445412
@@ -524,6 +526,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &56567242
@@ -700,6 +703,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &101355745
@@ -876,6 +880,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &104273597
@@ -1052,6 +1057,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &114650667
@@ -1228,6 +1234,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &173914572
@@ -1404,6 +1411,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &180765878
@@ -1580,6 +1588,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &180993019
@@ -1756,6 +1765,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &191535986
@@ -1932,6 +1942,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &252858961
@@ -2108,6 +2119,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &259564367
@@ -2284,6 +2296,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &262340813
@@ -2460,6 +2473,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &265658678
@@ -2636,6 +2650,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &268205597
@@ -2812,6 +2827,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &271404257
@@ -3018,7 +3034,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_TargetDisplay: 0
 --- !u!224 &295174119
 RectTransform:
@@ -3158,6 +3174,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &316964353
@@ -3334,6 +3351,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &357610814
@@ -3510,6 +3528,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &378645876
@@ -3686,6 +3705,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &392467227
@@ -3862,6 +3882,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &485114533
@@ -4038,6 +4059,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &494814679
@@ -4306,6 +4328,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &527775349
@@ -4482,6 +4505,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &548384396
@@ -4658,6 +4682,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &567770165
@@ -4834,6 +4859,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &576268317
@@ -5010,6 +5036,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &593863690
@@ -5186,6 +5213,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &606905327
@@ -5362,6 +5390,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &619327973
@@ -5538,6 +5567,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &630250871
@@ -5714,6 +5744,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &683415486
@@ -5890,6 +5921,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &689208138
@@ -6138,6 +6170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855914aac57288c479cd9ed1a2317837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spawner: {fileID: 0}
+  gameOver: 0
 --- !u!114 &706533619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6272,6 +6307,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &729414827
@@ -6448,6 +6484,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &783562031
@@ -6624,6 +6661,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &812678477
@@ -6800,6 +6838,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &841441398
@@ -6976,6 +7015,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &861789691
@@ -7272,6 +7312,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &912270867
@@ -7448,6 +7489,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &926921312
@@ -7624,6 +7666,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &946672044
@@ -7800,6 +7843,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &998513350
@@ -7976,6 +8020,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1004888671
@@ -8152,6 +8197,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1022148216
@@ -8328,6 +8374,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1059678416
@@ -8504,6 +8551,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1060677990
@@ -8680,6 +8728,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1065179819
@@ -8856,6 +8905,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1091325270
@@ -9032,6 +9082,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1103665718
@@ -9208,6 +9259,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1123264577
@@ -9384,6 +9436,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1277309331
@@ -9560,6 +9613,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1278994308
@@ -9736,6 +9790,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1284170393
@@ -9912,6 +9967,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1306415613
@@ -10088,6 +10144,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1342051441
@@ -10496,6 +10553,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1418053531
@@ -10672,6 +10730,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1418107689
@@ -10848,6 +10907,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1426381706
@@ -11024,6 +11084,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1446949099
@@ -11200,6 +11261,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1453295595
@@ -11376,6 +11438,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1502410609
@@ -11552,6 +11615,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1528089042
@@ -11728,6 +11792,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1598727361
@@ -11904,6 +11969,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1630253589
@@ -12115,6 +12181,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1656656878
@@ -12291,6 +12358,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1708073379
@@ -12467,6 +12535,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1722214242
@@ -12643,6 +12712,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1739845968
@@ -12819,6 +12889,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1744123379
@@ -12995,6 +13066,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1780833083
@@ -13171,6 +13243,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1783209718
@@ -13347,6 +13420,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1802182006
@@ -13523,6 +13597,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1857766876
@@ -13699,6 +13774,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1892971780
@@ -13906,6 +13982,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1910096244
@@ -14082,6 +14159,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1918606130
@@ -14258,6 +14336,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1927913402
@@ -14434,6 +14513,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1947709609
@@ -14610,6 +14690,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &1993310176
@@ -14786,6 +14867,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2008605715
@@ -14962,6 +15044,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2048361746
@@ -15138,6 +15221,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2079133108
@@ -15314,6 +15398,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2087310971
@@ -15490,6 +15575,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2119381611
@@ -15666,6 +15752,7 @@ MonoBehaviour:
   newSprite:
   - {fileID: 21300000, guid: 920f1d11f70be914093e634c251c842e, type: 3}
   - {fileID: 21300000, guid: 89cfb70fdd4861444ac77b95c9bc3733, type: 3}
+  nomal: {fileID: 0}
   playerInHole: 0
   counter: 0
 --- !u!50 &2134975206
