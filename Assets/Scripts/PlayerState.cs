@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour
@@ -43,6 +41,7 @@ public class PlayerState : MonoBehaviour
 
     private void Update()
     {
+
         if (Collider2d.enabled == false)
         {
             Debug.Log(gameOver);
@@ -152,6 +151,34 @@ public class PlayerState : MonoBehaviour
         transform.position = spawner.transform.position;
         Debug.Log("‚à‚¤ˆê‰ñ");
         playerMove.enabled = true;
+    }
+
+    public void YUKABlack()
+    {
+        animator.SetBool("GameOver", true);
+        animator.SetBool("Up", false);
+        animator.SetBool("Down", false);
+        animator.SetBool("Right2", false);
+        animator.SetBool("Right", false);
+        Collider2d.enabled = false;
+        playerMove.enabled = false;
+
+        if (Collider2d.enabled == false)
+        {
+            Debug.Log(gameOver);
+            gameOverTimer += Time.deltaTime;
+            Debug.Log(gameOverTimer);
+            if (gameOverTimer >= 0.3f)
+            {
+                GameOver();
+            }
+        }
+
+        if (gameOverTimer >= 1f)
+        {
+            Spawn();
+            gameOverTimer = 0f;
+        }
     }
 
 }

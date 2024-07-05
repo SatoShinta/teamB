@@ -43,7 +43,7 @@ public class YUKAcontroller : MonoBehaviour
             {
                 yukaSpriteRenderer.sprite = newSprite[counter];
                 counter++;
-                if (counter == newSprite.Length)
+                if (counter >= newSprite.Length)
                 {
                     counter = 1;
                     playerInHole = true;
