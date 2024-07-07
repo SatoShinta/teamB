@@ -102,7 +102,6 @@ public class PlayerState : MonoBehaviour
                     animator.SetBool("Right2", false);
                     animator.SetBool("Right", false);
                     Collider2d.enabled = false;
-                    playerMove.speed = 0f;
                 }
             }
         }
@@ -134,7 +133,6 @@ public class PlayerState : MonoBehaviour
         transform.position = spawner.transform.position;
         gameOver = false;
         Collider2d.enabled = true;
-        playerMove.speed = 250f;
         Debug.Log("umakuitta");
     }
 
@@ -161,7 +159,6 @@ public class PlayerState : MonoBehaviour
         animator.SetBool("Right2", false);
         animator.SetBool("Right", false);
         Collider2d.enabled = false;
-        playerMove.speed = 0f;
 
         if (Collider2d.enabled == false)
         {

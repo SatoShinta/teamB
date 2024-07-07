@@ -225,7 +225,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &22204365
 Rigidbody2D:
   serializedVersion: 4
@@ -485,9 +485,9 @@ GameObject:
   m_Component:
   - component: {fileID: 38785281}
   - component: {fileID: 38785282}
-  - component: {fileID: 38785283}
   - component: {fileID: 38785284}
-  m_Layer: 0
+  - component: {fileID: 38785285}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -547,9 +547,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -561,7 +561,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &38785283
+--- !u!50 &38785284
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38785280}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &38785285
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -606,33 +633,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &38785284
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 38785280}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &44421267
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &44421271
 Rigidbody2D:
   serializedVersion: 4
@@ -819,9 +819,9 @@ GameObject:
   m_Component:
   - component: {fileID: 53529148}
   - component: {fileID: 53529149}
-  - component: {fileID: 53529150}
   - component: {fileID: 53529151}
-  m_Layer: 0
+  - component: {fileID: 53529152}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -881,9 +881,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -895,7 +895,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &53529150
+--- !u!50 &53529151
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53529147}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &53529152
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -940,33 +967,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &53529151
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53529147}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &62800418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &94790703
 Rigidbody2D:
   serializedVersion: 4
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &105061460
 Rigidbody2D:
   serializedVersion: 4
@@ -1678,9 +1678,9 @@ GameObject:
   m_Component:
   - component: {fileID: 128688861}
   - component: {fileID: 128688862}
-  - component: {fileID: 128688863}
   - component: {fileID: 128688864}
-  m_Layer: 0
+  - component: {fileID: 128688865}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -1740,9 +1740,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1754,7 +1754,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &128688863
+--- !u!50 &128688864
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128688860}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &128688865
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1799,33 +1826,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &128688864
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128688860}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &133858358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,9 +2539,9 @@ GameObject:
   m_Component:
   - component: {fileID: 194012145}
   - component: {fileID: 194012146}
-  - component: {fileID: 194012147}
   - component: {fileID: 194012148}
-  m_Layer: 0
+  - component: {fileID: 194012149}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -2601,9 +2601,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -2615,7 +2615,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &194012147
+--- !u!50 &194012148
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194012144}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &194012149
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2660,33 +2687,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &194012148
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194012144}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &217782427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,7 +3134,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &260234975
 Rigidbody2D:
   serializedVersion: 4
@@ -4080,9 +4080,9 @@ GameObject:
   m_Component:
   - component: {fileID: 360142995}
   - component: {fileID: 360142996}
-  - component: {fileID: 360142997}
   - component: {fileID: 360142998}
-  m_Layer: 0
+  - component: {fileID: 360142999}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -4142,9 +4142,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -4156,7 +4156,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &360142997
+--- !u!50 &360142998
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360142994}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &360142999
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4201,33 +4228,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &360142998
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360142994}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &365533674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,9 +4587,9 @@ GameObject:
   m_Component:
   - component: {fileID: 392931554}
   - component: {fileID: 392931555}
-  - component: {fileID: 392931556}
   - component: {fileID: 392931557}
-  m_Layer: 0
+  - component: {fileID: 392931558}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -4649,9 +4649,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -4663,7 +4663,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &392931556
+--- !u!50 &392931557
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392931553}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &392931558
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4708,33 +4735,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &392931557
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392931553}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &395639893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,7 +4838,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &395639897
 Rigidbody2D:
   serializedVersion: 4
@@ -5712,7 +5712,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &429563395
 Rigidbody2D:
   serializedVersion: 4
@@ -6060,7 +6060,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &459684154
 Rigidbody2D:
   serializedVersion: 4
@@ -6934,7 +6934,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &512002430
 Rigidbody2D:
   serializedVersion: 4
@@ -7556,7 +7556,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &549486098
 Rigidbody2D:
   serializedVersion: 4
@@ -7732,7 +7732,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &560743081
 Rigidbody2D:
   serializedVersion: 4
@@ -7908,7 +7908,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &561698653
 Rigidbody2D:
   serializedVersion: 4
@@ -8256,7 +8256,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &565197737
 Rigidbody2D:
   serializedVersion: 4
@@ -9135,7 +9135,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &581285256
 Rigidbody2D:
   serializedVersion: 4
@@ -9395,9 +9395,9 @@ GameObject:
   m_Component:
   - component: {fileID: 606853250}
   - component: {fileID: 606853251}
-  - component: {fileID: 606853252}
   - component: {fileID: 606853253}
-  m_Layer: 0
+  - component: {fileID: 606853254}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -9457,9 +9457,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -9471,7 +9471,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &606853252
+--- !u!50 &606853253
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606853249}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &606853254
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9516,33 +9543,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &606853253
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606853249}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &612040589
 GameObject:
   m_ObjectHideFlags: 0
@@ -10000,7 +10000,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &617450490
 Rigidbody2D:
   serializedVersion: 4
@@ -10176,7 +10176,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &627746376
 Rigidbody2D:
   serializedVersion: 4
@@ -10352,7 +10352,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &641031921
 Rigidbody2D:
   serializedVersion: 4
@@ -10705,7 +10705,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &705104247
 Rigidbody2D:
   serializedVersion: 4
@@ -10788,9 +10788,9 @@ GameObject:
   m_Component:
   - component: {fileID: 708360420}
   - component: {fileID: 708360421}
-  - component: {fileID: 708360422}
   - component: {fileID: 708360423}
-  m_Layer: 0
+  - component: {fileID: 708360424}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -10850,9 +10850,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -10864,7 +10864,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &708360422
+--- !u!50 &708360423
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708360419}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &708360424
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10909,33 +10936,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &708360423
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708360419}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &734279557
 GameObject:
   m_ObjectHideFlags: 0
@@ -11202,9 +11202,9 @@ GameObject:
   m_Component:
   - component: {fileID: 749515016}
   - component: {fileID: 749515017}
-  - component: {fileID: 749515018}
   - component: {fileID: 749515019}
-  m_Layer: 0
+  - component: {fileID: 749515020}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -11264,9 +11264,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -11278,7 +11278,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &749515018
+--- !u!50 &749515019
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749515015}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &749515020
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11323,33 +11350,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &749515019
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749515015}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &767820158
 GameObject:
   m_ObjectHideFlags: 0
@@ -11630,7 +11630,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &773240174
 Rigidbody2D:
   serializedVersion: 4
@@ -11983,7 +11983,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &833944742
 Rigidbody2D:
   serializedVersion: 4
@@ -12066,9 +12066,9 @@ GameObject:
   m_Component:
   - component: {fileID: 834095859}
   - component: {fileID: 834095860}
-  - component: {fileID: 834095861}
   - component: {fileID: 834095862}
-  m_Layer: 0
+  - component: {fileID: 834095863}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -12128,9 +12128,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -12142,7 +12142,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &834095861
+--- !u!50 &834095862
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834095858}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &834095863
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12174,7 +12201,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.012189969}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12187,33 +12214,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &834095862
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 834095858}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &845037378
 GameObject:
   m_ObjectHideFlags: 0
@@ -12693,9 +12693,9 @@ GameObject:
   m_Component:
   - component: {fileID: 906126944}
   - component: {fileID: 906126945}
-  - component: {fileID: 906126946}
   - component: {fileID: 906126947}
-  m_Layer: 0
+  - component: {fileID: 906126948}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -12755,9 +12755,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -12769,7 +12769,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &906126946
+--- !u!50 &906126947
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906126943}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &906126948
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12814,33 +12841,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &906126947
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906126943}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &906478976
 GameObject:
   m_ObjectHideFlags: 0
@@ -12944,7 +12944,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &906478980
 Rigidbody2D:
   serializedVersion: 4
@@ -13381,7 +13381,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &927220599
 Rigidbody2D:
   serializedVersion: 4
@@ -13557,7 +13557,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &930857308
 Rigidbody2D:
   serializedVersion: 4
@@ -13640,9 +13640,9 @@ GameObject:
   m_Component:
   - component: {fileID: 934983493}
   - component: {fileID: 934983492}
-  - component: {fileID: 934983494}
   - component: {fileID: 934983495}
-  m_Layer: 0
+  - component: {fileID: 934983496}
+  m_Layer: 6
   m_Name: Rock
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -13687,9 +13687,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -13716,7 +13716,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380298345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &934983494
+--- !u!50 &934983495
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934983491}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &934983496
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13761,33 +13788,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &934983495
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934983491}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &936027048
 GameObject:
   m_ObjectHideFlags: 0
@@ -15631,7 +15631,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1089438832
 Rigidbody2D:
   serializedVersion: 4
@@ -15984,7 +15984,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1100991347
 Rigidbody2D:
   serializedVersion: 4
@@ -16509,7 +16509,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1123969302
 Rigidbody2D:
   serializedVersion: 4
@@ -16862,7 +16862,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1137905660
 Rigidbody2D:
   serializedVersion: 4
@@ -17117,9 +17117,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1142724938}
   - component: {fileID: 1142724939}
-  - component: {fileID: 1142724940}
   - component: {fileID: 1142724941}
-  m_Layer: 0
+  - component: {fileID: 1142724942}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -17179,9 +17179,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -17193,7 +17193,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1142724940
+--- !u!50 &1142724941
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142724937}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1142724942
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17238,33 +17265,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1142724941
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142724937}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1148644969
 GameObject:
   m_ObjectHideFlags: 0
@@ -17540,7 +17540,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1151954710
 Rigidbody2D:
   serializedVersion: 4
@@ -17893,7 +17893,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1170765374
 Rigidbody2D:
   serializedVersion: 4
@@ -18595,7 +18595,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1238099075
 Rigidbody2D:
   serializedVersion: 4
@@ -19297,7 +19297,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1254699687
 Rigidbody2D:
   serializedVersion: 4
@@ -19380,9 +19380,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1260547272}
   - component: {fileID: 1260547273}
-  - component: {fileID: 1260547274}
   - component: {fileID: 1260547275}
-  m_Layer: 0
+  - component: {fileID: 1260547276}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -19442,9 +19442,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -19456,7 +19456,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1260547274
+--- !u!50 &1260547275
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260547271}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1260547276
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19501,33 +19528,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1260547275
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260547271}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1261931372
 GameObject:
   m_ObjectHideFlags: 0
@@ -19538,9 +19538,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1261931373}
   - component: {fileID: 1261931374}
-  - component: {fileID: 1261931375}
   - component: {fileID: 1261931376}
-  m_Layer: 0
+  - component: {fileID: 1261931377}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -19600,9 +19600,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -19614,7 +19614,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1261931375
+--- !u!50 &1261931376
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261931372}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1261931377
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19659,33 +19686,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1261931376
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261931372}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1266411509
 GameObject:
   m_ObjectHideFlags: 0
@@ -19961,7 +19961,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1274505218
 Rigidbody2D:
   serializedVersion: 4
@@ -20653,7 +20653,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1278872174
 Rigidbody2D:
   serializedVersion: 4
@@ -21006,7 +21006,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1298599823
 Rigidbody2D:
   serializedVersion: 4
@@ -21354,7 +21354,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1307725483
 Rigidbody2D:
   serializedVersion: 4
@@ -21786,9 +21786,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1341635232}
   - component: {fileID: 1341635233}
-  - component: {fileID: 1341635234}
   - component: {fileID: 1341635235}
-  m_Layer: 0
+  - component: {fileID: 1341635236}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -21848,9 +21848,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -21862,7 +21862,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1341635234
+--- !u!50 &1341635235
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341635231}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1341635236
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21907,33 +21934,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1341635235
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341635231}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1367892218
 GameObject:
   m_ObjectHideFlags: 0
@@ -22037,7 +22037,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1367892222
 Rigidbody2D:
   serializedVersion: 4
@@ -22562,7 +22562,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1373846233
 Rigidbody2D:
   serializedVersion: 4
@@ -22738,7 +22738,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1376075301
 Rigidbody2D:
   serializedVersion: 4
@@ -23798,7 +23798,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1404867483
 Rigidbody2D:
   serializedVersion: 4
@@ -24146,7 +24146,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1422534067
 Rigidbody2D:
   serializedVersion: 4
@@ -24227,6 +24227,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1234294461322004540, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234294461322004540, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1339905351113913302, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: speed
       value: 250
@@ -24234,6 +24242,10 @@ PrefabInstance:
     - target: {fileID: 2635530220440737096, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635530220440737096, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3190732643814254617, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24279,13 +24291,17 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 1865178859}
+    - target: {fileID: 3994162418080366965, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: gameOver
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4313980326913394343, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: m_Size.x
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4313980326913394343, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: m_Size.y
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24567,7 +24583,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1448838956
 Rigidbody2D:
   serializedVersion: 4
@@ -24915,7 +24931,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1459423722
 Rigidbody2D:
   serializedVersion: 4
@@ -25175,9 +25191,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1467559965}
   - component: {fileID: 1467559966}
-  - component: {fileID: 1467559967}
   - component: {fileID: 1467559968}
-  m_Layer: 0
+  - component: {fileID: 1467559969}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -25237,9 +25253,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -25251,7 +25267,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1467559967
+--- !u!50 &1467559968
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467559964}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1467559969
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25296,33 +25339,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1467559968
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467559964}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1481205210
 GameObject:
   m_ObjectHideFlags: 0
@@ -26129,7 +26145,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1507659782
 Rigidbody2D:
   serializedVersion: 4
@@ -26654,7 +26670,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1523063687
 Rigidbody2D:
   serializedVersion: 4
@@ -27174,7 +27190,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1547165597
 Rigidbody2D:
   serializedVersion: 4
@@ -28127,9 +28143,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1603569483}
   - component: {fileID: 1603569484}
-  - component: {fileID: 1603569485}
   - component: {fileID: 1603569486}
-  m_Layer: 0
+  - component: {fileID: 1603569487}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -28189,9 +28205,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -28203,7 +28219,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1603569485
+--- !u!50 &1603569486
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603569482}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1603569487
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28248,33 +28291,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1603569486
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603569482}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1607257613
 GameObject:
   m_ObjectHideFlags: 0
@@ -28550,7 +28566,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1609126131
 Rigidbody2D:
   serializedVersion: 4
@@ -28898,7 +28914,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1647517695
 Rigidbody2D:
   serializedVersion: 4
@@ -29795,7 +29811,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1681950474
 Rigidbody2D:
   serializedVersion: 4
@@ -30143,7 +30159,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1699930633
 Rigidbody2D:
   serializedVersion: 4
@@ -31445,9 +31461,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1800446811}
   - component: {fileID: 1800446812}
-  - component: {fileID: 1800446813}
   - component: {fileID: 1800446814}
-  m_Layer: 0
+  - component: {fileID: 1800446815}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -31507,9 +31523,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -31521,7 +31537,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1800446813
+--- !u!50 &1800446814
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800446810}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1800446815
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31566,33 +31609,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1800446814
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800446810}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1816003782
 GameObject:
   m_ObjectHideFlags: 0
@@ -31696,7 +31712,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1816003786
 Rigidbody2D:
   serializedVersion: 4
@@ -32472,9 +32488,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1847733452}
   - component: {fileID: 1847733453}
-  - component: {fileID: 1847733454}
   - component: {fileID: 1847733455}
-  m_Layer: 0
+  - component: {fileID: 1847733456}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -32534,9 +32550,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -32548,7 +32564,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1847733454
+--- !u!50 &1847733455
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847733451}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1847733456
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32593,33 +32636,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1847733455
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847733451}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1848398952
 GameObject:
   m_ObjectHideFlags: 0
@@ -32723,7 +32739,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1848398956
 Rigidbody2D:
   serializedVersion: 4
@@ -32899,7 +32915,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1861422363
 Rigidbody2D:
   serializedVersion: 4
@@ -32997,7 +33013,7 @@ Transform:
   m_GameObject: {fileID: 1865178859}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.39, y: 0.99, z: 0.08286039}
+  m_LocalPosition: {x: -9.4, y: 1.01, z: 0.08286039}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33455,7 +33471,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1881782380
 Rigidbody2D:
   serializedVersion: 4
@@ -33631,7 +33647,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1882078459
 Rigidbody2D:
   serializedVersion: 4
@@ -33838,7 +33854,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1933474879
 Rigidbody2D:
   serializedVersion: 4
@@ -33921,9 +33937,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1951208429}
   - component: {fileID: 1951208430}
-  - component: {fileID: 1951208431}
   - component: {fileID: 1951208432}
-  m_Layer: 0
+  - component: {fileID: 1951208433}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -33983,9 +33999,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -33997,7 +34013,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1951208431
+--- !u!50 &1951208432
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951208428}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &1951208433
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34042,33 +34085,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &1951208432
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951208428}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &1982224504
 GameObject:
   m_ObjectHideFlags: 0
@@ -34349,7 +34365,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &1998082514
 Rigidbody2D:
   serializedVersion: 4
@@ -34702,7 +34718,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &2005676314
 Rigidbody2D:
   serializedVersion: 4
@@ -35134,9 +35150,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2045653374}
   - component: {fileID: 2045653375}
-  - component: {fileID: 2045653376}
   - component: {fileID: 2045653377}
-  m_Layer: 0
+  - component: {fileID: 2045653378}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -35196,9 +35212,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -35210,7 +35226,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2045653376
+--- !u!50 &2045653377
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045653373}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &2045653378
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35255,33 +35298,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &2045653377
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045653373}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &2048599487
 GameObject:
   m_ObjectHideFlags: 0
@@ -35385,7 +35401,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &2048599491
 Rigidbody2D:
   serializedVersion: 4
@@ -36087,7 +36103,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 165e20b93bcf0104fbb931d367494a53, type: 3}
   nomal: {fileID: 21300000, guid: 6905bed5d852c224398839cdd0cdb64d, type: 3}
   playerInHole: 0
-  counter: 1
+  counter: 0
 --- !u!50 &2069281786
 Rigidbody2D:
   serializedVersion: 4
@@ -36524,9 +36540,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2081158406}
   - component: {fileID: 2081158407}
-  - component: {fileID: 2081158408}
   - component: {fileID: 2081158409}
-  m_Layer: 0
+  - component: {fileID: 2081158410}
+  m_Layer: 6
   m_Name: Rock(Clone)
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -36586,9 +36602,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1936708045
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -36600,7 +36616,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2081158408
+--- !u!50 &2081158409
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081158405}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 7
+--- !u!61 &2081158410
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36645,33 +36688,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
---- !u!50 &2081158409
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081158405}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 7
 --- !u!1 &2084459431
 GameObject:
   m_ObjectHideFlags: 0
