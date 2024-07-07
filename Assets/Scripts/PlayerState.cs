@@ -27,6 +27,7 @@ public class PlayerState : MonoBehaviour
         playerMove = GetComponent<PlayerMove>();
         playerRenderer = gameObject.GetComponent<SpriteRenderer>();
 
+
         //YUKAcontrollerを取得してyukacontroller配列に格納する
         yukaController = new YUKAcontroller[objArray.Length];
         for (int i = 0; i < objArray.Length; i++)
@@ -47,7 +48,7 @@ public class PlayerState : MonoBehaviour
             Debug.Log(gameOver);
             gameOverTimer += Time.deltaTime;
             Debug.Log(gameOverTimer);
-            if (gameOverTimer >= 0.3f)
+            if (gameOverTimer >= 0.1f)
             {
                 GameOver();
             }
@@ -67,14 +68,12 @@ public class PlayerState : MonoBehaviour
             {
                 Debug.Log("gameclear");
                 playerMove.enabled = false;
-                animator.SetBool("Right", false);
             }
         }
         else if (treasureCounter < 3 && goal == true)
         {
-            Invoke("DelayedNomal", 0.1f);
+            Invoke("DelayedNomal", 1f);
             playerMove.enabled = false;
-            animator.SetBool("Right", false);
         }
 
 
@@ -84,27 +83,24 @@ public class PlayerState : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+    
         //配列の要素をobjに取得
-        foreach (GameObject obj in objArray)
-        {
-            //yukaにすべての配列のYUKAcontrollerを取得させる
-            YUKAcontroller yuka = obj.GetComponent<YUKAcontroller>();
+         foreach (GameObject obj in objArray)
+         {
+             //yukaにすべての配列のYUKAcontrollerを取得させる
+             YUKAcontroller yuka = obj.GetComponent<YUKAcontroller>();
 
-            //yuka にコンポーネントがあり、 playerInHole フラグがtureの時
-            if (yuka != null && yuka.playerInHole == true)
-            {
-                //playerの下にあるオブジェクトがobjに格納されているものと同じ場合
-                if (collision.gameObject == obj)
-                {
-                    animator.SetBool("GameOver", true);
-                    animator.SetBool("Up", false);
-                    animator.SetBool("Down", false);
-                    animator.SetBool("Right2", false);
-                    animator.SetBool("Right", false);
-                    Collider2d.enabled = false;
-                }
-            }
-        }
+             //yuka にコンポーネントがあり、 playerInHole フラグがtureの時
+             if (yuka != null && yuka.playerInHole == true)
+             {
+                 //playerの下にあるオブジェクトがobjに格納されているものと同じ場合
+                 if (collision.gameObject == obj)
+                 {
+                     animator.SetBool("GameOver", true);
+                     Collider2d.enabled = false;
+                 }
+             }
+         }
 
 
         if (collision.gameObject.CompareTag("Treasure"))
@@ -133,6 +129,7 @@ public class PlayerState : MonoBehaviour
         transform.position = spawner.transform.position;
         gameOver = false;
         Collider2d.enabled = true;
+        playerMove.enabled = true;
         Debug.Log("umakuitta");
     }
 

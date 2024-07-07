@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     bool moveing;
     Vector2 input;
     Animator animator;
+    PlayerState state;
 
     //壁判定のレイヤー
     [SerializeField] LayerMask solidObjects;
@@ -14,36 +15,41 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        state = GetComponent<PlayerState>();
     }
 
 
     private void Update()
     {
-        if (!moveing)
+        if (!state.gameOver)
         {
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
-
-            //斜め移動対策
-            if (input.x != 0)
+            if (!moveing)
             {
-                input.y = 0;
-            }
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
 
-            if (input != Vector2.zero)
-            {
-                //入力があったら向きを変える
-                animator.SetFloat("Movex", input.x);
-                animator.SetFloat("Movey", input.y);
-
-                //コルーチンを使用して徐々に目的地に近づける
-
-                Vector2 targetpos = transform.position;
-                targetpos += input;
-                if(IsWalkable(targetpos))
+                //斜め移動対策
+                if (input.x != 0)
                 {
-                    StartCoroutine(Move(targetpos));
+                    input.y = 0;
                 }
+
+                if (input != Vector2.zero)
+                {
+                    //入力があったら向きを変える
+                    animator.SetFloat("Movex", input.x);
+                    animator.SetFloat("Movey", input.y);
+
+                    //コルーチンを使用して徐々に目的地に近づける
+
+                    Vector2 targetpos = transform.position;
+                    targetpos += input;
+                    if (IsWalkable(targetpos))
+                    {
+                        StartCoroutine(Move(targetpos));
+                    }
+                }
+
             }
         }
         animator.SetBool("isMoving", moveing);
