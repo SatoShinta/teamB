@@ -1,81 +1,82 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private Animator animator = null;
-    private int counter = 0;
-    private float timer = 0;
+    [SerializeField] float moveSpeed;
+    bool moveing;
+    Vector2 input;
+    Animator animator;
+    PlayerState state;
 
-    // [SerializeField, Header("playerの移動速度")] float _speed = 0;
-    //Vector3 _position;
-    //Vector2 _move;
+    //壁判定のレイヤー
+    [SerializeField] LayerMask solidObjects;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
-        // _position = transform.position;
+        state = GetComponent<PlayerState>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= 0.2f)
+        if (!state.gameOver)
         {
-            if (Input.GetKeyDown(KeyCode.W) || (Input.GetKeyDown(KeyCode.UpArrow)))
+            if (!moveing)
             {
-                animator.SetInteger("Direction", 2);
-                animator.SetBool("Up", true);
-                transform.Translate(0, 1, 0);
-                counter++;
-                timer = 0f;
-            }
-            else
-            {
-                animator.SetBool("Up", false);
-            }
+                input.x = Input.GetAxisRaw("Horizontal");
+                input.y = Input.GetAxisRaw("Vertical");
 
+                //斜め移動対策
+                if (input.x != 0)
+                {
+                    input.y = 0;
+                }
 
-            if (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.DownArrow)))
-            {
-                animator.SetInteger("Direction", 1);
-                animator.SetBool("Down", true);
-                transform.Translate(0, -1, 0);
-                counter++;
-                timer = 0f;
-            }
-            else
-            {
-                animator.SetBool("Down", false);
-            }
+                if (input != Vector2.zero)
+                {
+                    //入力があったら向きを変える
+                    animator.SetFloat("Movex", input.x);
+                    animator.SetFloat("Movey", input.y);
 
+                    //コルーチンを使用して徐々に目的地に近づける
 
-            if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.LeftArrow)))
-            {
-                animator.SetInteger("Direction", 4);
-                animator.SetBool("Right2", true);
-                transform.Translate(-1, 0, 0);
-                transform.localScale = new Vector3(1, 1, 1);
-                timer = 0f;
-            }
-            else
-            {
-                animator.SetBool("Right2", false);
-            }
+                    Vector2 targetpos = transform.position;
+                    targetpos += input;
+                    if (IsWalkable(targetpos))
+                    {
+                        StartCoroutine(Move(targetpos));
+                    }
+                }
 
-            if (Input.GetKeyDown(KeyCode.D) || (Input.GetKeyDown(KeyCode.RightArrow)))
-            {
-                animator.SetInteger("Direction", 3);
-                animator.SetBool("Right", true);
-                transform.Translate(1, 0, 0);
-                transform.localScale = new Vector3(1, 1, 1);
-                timer = 0f;
-            }
-            else
-            {
-                animator.SetBool("Right", false);
             }
         }
+        animator.SetBool("isMoving", moveing);
+
+    }
+
+
+    IEnumerator Move(Vector3 targetpos)
+    {
+        //移動中は入力を受け付けない
+        moveing = true;
+
+        // targetposとの差があるなら繰り返す
+        while ((targetpos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        {
+            //  近づける
+            transform.position = Vector3.MoveTowards(transform.position, targetpos, moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+        transform.position = targetpos;
+        moveing = false;
+    }
+
+    //targetposに移動可能か調べる
+    bool IsWalkable(Vector2 targetpos)
+    {
+        bool hit = Physics2D.OverlapCircle(targetpos, 0.2f, solidObjects);
+        return !hit;
     }
 }
