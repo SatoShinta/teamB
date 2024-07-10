@@ -24622,6 +24622,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1651981018}
     m_Modifications:
     - target: {fileID: 1234294461322004540, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234294461322004540, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -802340469, guid: 79250a32ea4fe4b46b9a89e358d41e63, type: 3}
+    - target: {fileID: 1234294461322004540, guid: 35fcd1cf79e887648a8aa29121c69aaa, type: 3}
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
@@ -37916,6 +37924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110446014}
   - component: {fileID: 2110446013}
+  - component: {fileID: 2110446015}
   m_Layer: 6
   m_Name: OutArea
   m_TagString: Untagged
@@ -37983,6 +37992,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1651981018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110446015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110446012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65a133c91eecba4c91ee1a9db5ec78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2135042490
 GameObject:
   m_ObjectHideFlags: 0
