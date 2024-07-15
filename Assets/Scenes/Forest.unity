@@ -35065,6 +35065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893713737}
   - component: {fileID: 1893713738}
+  - component: {fileID: 1893713739}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -35102,6 +35103,21 @@ MonoBehaviour:
   ImageWindow: {fileID: 1772380085}
   text: {fileID: 1692173506}
   characterMessage: {fileID: 431957970}
+--- !u!114 &1893713739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893713736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1461520d1a0e9e4e9ea985066b680e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 1692173506}
+  defaultImage: {fileID: 0}
+  delayDuration: 0
 --- !u!1 &1933474875
 GameObject:
   m_ObjectHideFlags: 0
