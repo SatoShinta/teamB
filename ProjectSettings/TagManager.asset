@@ -8,6 +8,9 @@ TagManager:
   - Goal
   - Rock
   - Treasure
+  - MiniCharaImage
+  - CharaImage
+  - CharaMessage
   layers:
   - Default
   - TransparentFX
