@@ -62,8 +62,10 @@ public class PlayerMove : MonoBehaviour
         //ˆÚ“®’†‚Í“ü—Í‚ðŽó‚¯•t‚¯‚È‚¢
         moveing = true;
 
+        float threshold = 0.01f;
+
         // targetpos‚Æ‚Ì·‚ª‚ ‚é‚È‚çŒJ‚è•Ô‚·
-        while ((targetpos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        while (Vector3.Distance(transform.position, targetpos) > threshold)
         {
             //  ‹ß‚Ã‚¯‚é
             transform.position = Vector3.MoveTowards(transform.position, targetpos, moveSpeed * Time.deltaTime);
@@ -76,7 +78,7 @@ public class PlayerMove : MonoBehaviour
     //targetpos‚ÉˆÚ“®‰Â”\‚©’²‚×‚é
     bool IsWalkable(Vector2 targetpos)
     {
-        bool hit = Physics2D.OverlapCircle(targetpos, 0.2f, solidObjects);
+        bool hit = Physics2D.OverlapCircle(targetpos, 0.3f, solidObjects);
         return !hit;
     }
 }
