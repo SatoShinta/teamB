@@ -4,10 +4,15 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
+    [SerializeField] float footstepInterval = 0.5f;
+    [SerializeField] float footstepVolume = 1.0f;
+    [SerializeField] AudioClip footstepSound;
+
     bool moveing;
     Vector2 input;
     Animator animator;
     PlayerState state;
+    AudioSource audioSource;
 
     //ï«îªíËÇÃÉåÉCÉÑÅ[
     [SerializeField] LayerMask solidObjects;
@@ -16,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         state = GetComponent<PlayerState>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -63,12 +69,22 @@ public class PlayerMove : MonoBehaviour
         moveing = true;
 
         float threshold = 0.01f;
+        float elapsedTIme = 0f;
+        float lastFootstepTime = 0f;
 
         // targetposÇ∆ÇÃç∑Ç™Ç†ÇÈÇ»ÇÁåJÇËï‘Ç∑
         while (Vector3.Distance(transform.position, targetpos) > threshold)
         {
             //  ãﬂÇ√ÇØÇÈ
             transform.position = Vector3.MoveTowards(transform.position, targetpos, moveSpeed * Time.deltaTime);
+
+            elapsedTIme += Time.deltaTime;
+            if(elapsedTIme - lastFootstepTime >= footstepInterval)
+            {
+                PlayFootstepSound();
+                lastFootstepTime = elapsedTIme;
+            }
+
             yield return null;
         }
         transform.position = targetpos;
@@ -80,5 +96,14 @@ public class PlayerMove : MonoBehaviour
     {
         bool hit = Physics2D.OverlapCircle(targetpos, 0.3f, solidObjects);
         return !hit;
+    }
+
+    void PlayFootstepSound()
+    {
+        if(footstepSound != null && audioSource != null)
+        {
+            audioSource.volume = footstepVolume;
+            audioSource.PlayOneShot(footstepSound);
+        }
     }
 }
