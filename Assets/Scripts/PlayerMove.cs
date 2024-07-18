@@ -53,6 +53,7 @@ public class PlayerMove : MonoBehaviour
                     if (IsWalkable(targetpos))
                     {
                         StartCoroutine(Move(targetpos));
+                        PlayFootstepSound();
                     }
                 }
 
@@ -81,7 +82,6 @@ public class PlayerMove : MonoBehaviour
             elapsedTIme += Time.deltaTime;
             if(elapsedTIme - lastFootstepTime >= footstepInterval)
             {
-                PlayFootstepSound();
                 lastFootstepTime = elapsedTIme;
             }
 
