@@ -1,15 +1,31 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GetTreasure : MonoBehaviour
 {
+    [SerializeField] AudioClip getSound;
+    AudioSource AudioSource;
+
+    private void Start()
+    {
+        AudioSource = GetComponent<AudioSource>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
+            StartCoroutine(DestroyTreasure());
         }
 
+    }
+
+   
+
+    IEnumerator DestroyTreasure()
+    {
+        AudioSource.PlayOneShot(getSound);
+        yield return new WaitForSeconds(0.6f);
+        Destroy(gameObject);
     }
 }

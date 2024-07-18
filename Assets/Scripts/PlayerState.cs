@@ -151,10 +151,7 @@ public class PlayerState : MonoBehaviour
     public void YUKABlack()
     {
         animator.SetBool("GameOver", true);
-        animator.SetBool("Up", false);
-        animator.SetBool("Down", false);
-        animator.SetBool("Right2", false);
-        animator.SetBool("Right", false);
+       
         Collider2d.enabled = false;
 
         if (Collider2d.enabled == false)

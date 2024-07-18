@@ -4,10 +4,15 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
+    [SerializeField] float footstepInterval = 0.5f;
+    [SerializeField] float footstepVolume = 1.0f;
+    [SerializeField] AudioClip footstepSound;
+
     bool moveing;
     Vector2 input;
     Animator animator;
     PlayerState state;
+    AudioSource audioSource;
 
     //壁判定のレイヤー
     [SerializeField] LayerMask solidObjects;
@@ -16,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         state = GetComponent<PlayerState>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -47,6 +53,7 @@ public class PlayerMove : MonoBehaviour
                     if (IsWalkable(targetpos))
                     {
                         StartCoroutine(Move(targetpos));
+                        PlayFootstepSound();
                     }
                 }
 
@@ -62,11 +69,22 @@ public class PlayerMove : MonoBehaviour
         //移動中は入力を受け付けない
         moveing = true;
 
+        float threshold = 0.01f;
+        float elapsedTIme = 0f;
+        float lastFootstepTime = 0f;
+
         // targetposとの差があるなら繰り返す
-        while ((targetpos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        while (Vector3.Distance(transform.position, targetpos) > threshold)
         {
             //  近づける
             transform.position = Vector3.MoveTowards(transform.position, targetpos, moveSpeed * Time.deltaTime);
+
+            elapsedTIme += Time.deltaTime;
+            if(elapsedTIme - lastFootstepTime >= footstepInterval)
+            {
+                lastFootstepTime = elapsedTIme;
+            }
+
             yield return null;
         }
         transform.position = targetpos;
@@ -76,7 +94,16 @@ public class PlayerMove : MonoBehaviour
     //targetposに移動可能か調べる
     bool IsWalkable(Vector2 targetpos)
     {
-        bool hit = Physics2D.OverlapCircle(targetpos, 0.2f, solidObjects);
+        bool hit = Physics2D.OverlapCircle(targetpos, 0.3f, solidObjects);
         return !hit;
+    }
+
+    void PlayFootstepSound()
+    {
+        if(footstepSound != null && audioSource != null)
+        {
+            audioSource.volume = footstepVolume;
+            audioSource.PlayOneShot(footstepSound);
+        }
     }
 }
