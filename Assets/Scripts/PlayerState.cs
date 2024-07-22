@@ -16,6 +16,8 @@ public class PlayerState : MonoBehaviour
     private int treasureCounter;
     SpriteRenderer playerRenderer;
     YUKAcontroller[] yukaController;
+    
+    private SetImageWindow setImageWindow;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class PlayerState : MonoBehaviour
         Collider2d = GetComponent<BoxCollider2D>();
         playerMove = GetComponent<PlayerMove>();
         playerRenderer = gameObject.GetComponent<SpriteRenderer>();
+        setImageWindow = FindObjectOfType<SetImageWindow>();
 
 
         //YUKAcontroller‚ðŽæ“¾‚µ‚Äyukacontroller”z—ñ‚ÉŠi”[‚·‚é
@@ -42,7 +45,6 @@ public class PlayerState : MonoBehaviour
 
     private void Update()
     {
-
         if (Collider2d.enabled == false)
         {
             Debug.Log(gameOver);
@@ -68,6 +70,8 @@ public class PlayerState : MonoBehaviour
             {
                 Debug.Log("gameclear");
                 playerMove.enabled = false;
+
+                setImageWindow.SetImage();
             }
         }
         else if (treasureCounter < 3 && goal == true)

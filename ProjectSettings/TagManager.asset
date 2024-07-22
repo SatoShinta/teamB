@@ -11,6 +11,7 @@ TagManager:
   - MiniCharaImage
   - CharaImage
   - CharaMessage
+  - ImageWindow
   layers:
   - Default
   - TransparentFX

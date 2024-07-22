@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,24 +11,19 @@ public class SetImageWindow : MonoBehaviour
 
     private GameObject imageWindow;
     private Image _image;
-    private TextMeshProUGUI _meaaage;
+    private TextMeshProUGUI _message;
 
     void Start()
     {
-        imageWindow = GameObject.FindGameObjectWithTag("CharaImage");
-        _image = imageWindow.GetComponent<Image>();
-
-        GameObject characterMessage = GameObject.FindGameObjectWithTag("CharaMessage");
-        _meaaage = characterMessage.GetComponent<TextMeshProUGUI>();
+        imageWindow = GameObject.FindGameObjectWithTag("ImageWindow");
+        _image = GameObject.FindGameObjectWithTag("CharaImage").GetComponent<Image>();
+        _message = GameObject.FindGameObjectWithTag("CharaMessage").GetComponent<TextMeshProUGUI>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void SetImage()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            _image.sprite = settingImage;
-            _meaaage.text = settingMessage;
-            imageWindow.SetActive(true);
-        }
+        _image.sprite = settingImage;
+        _message.text = settingMessage;
+        imageWindow.SetActive(true);
     }
 }
