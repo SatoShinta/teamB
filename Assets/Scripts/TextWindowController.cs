@@ -11,16 +11,17 @@ public class TextWindowController : MonoBehaviour
     [SerializeField] private float delayDuration;
 
     private Image _image;
-
     private List<string> _textList;
-    private WaitForSeconds _daray;
+
+    private WaitForSeconds _deray;
+    private WaitUntil waitUserAction;
 
     void Start()
     {
-        GameObject characterImage = GameObject.FindGameObjectWithTag("MiniCharaImage");
-        _image = characterImage.GetComponent<Image>();
+        _image = GameObject.FindGameObjectWithTag("MiniCharaImage").GetComponent<Image>();
 
-        _daray = new WaitForSeconds(delayDuration);
+        _deray = new WaitForSeconds(delayDuration);
+        waitUserAction = new WaitUntil(() => Input.anyKeyDown);
     }
 
     public void SetTextList(List<string> textList)
@@ -33,6 +34,7 @@ public class TextWindowController : MonoBehaviour
         _image.sprite = image;
     }
 
+    //テキストを1文字ずつ描画し、最後にテキストとキャラ画像を初期化
     public IEnumerator DrawTextWindow()
     {
         for (int i = 0; i < _textList.Count; i++)
@@ -46,10 +48,10 @@ public class TextWindowController : MonoBehaviour
             {
                 _text.maxVisibleCharacters = j;
 
-                yield return _daray;
+                yield return _deray;
             }
 
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.anyKeyDown);
+            yield return waitUserAction;
         }
 
         _text.text = "";
