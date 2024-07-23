@@ -25,7 +25,7 @@ public class GetTreasure : MonoBehaviour
     IEnumerator DestroyTreasure()
     {
         AudioSource.PlayOneShot(getSound);
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.7f);
         Destroy(gameObject);
     }
 }
