@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float footstepVolume = 1.0f;
     [SerializeField] AudioClip footstepSound;
 
+    bool canMove = true;
     bool moveing;
     Vector2 input;
     Animator animator;
@@ -29,7 +30,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (!state.gameOver)
         {
-            if (!moveing)
+            if (!moveing && canMove)
             {
                 input.x = Input.GetAxisRaw("Horizontal");
                 input.y = Input.GetAxisRaw("Vertical");
@@ -54,6 +55,8 @@ public class PlayerMove : MonoBehaviour
                     {
                         StartCoroutine(Move(targetpos));
                         PlayFootstepSound();
+                        canMove = false;
+                        StartCoroutine(EnableMovementAfterDelay(0.5f));
                     }
                 }
 
@@ -105,5 +108,11 @@ public class PlayerMove : MonoBehaviour
             audioSource.volume = footstepVolume;
             audioSource.PlayOneShot(footstepSound);
         }
+    }
+
+    IEnumerator EnableMovementAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        canMove = true; // éwíËÇµÇΩéûä‘å„Ç…ëÄçÏÇéÛÇØïtÇØÇÈÇÊÇ§Ç…Ç∑ÇÈ
     }
 }
