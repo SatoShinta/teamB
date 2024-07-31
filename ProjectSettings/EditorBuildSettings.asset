@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 40969898325aec54d807fb6968d08833
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 35e276f70969837409f47d59113c9959
+  - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 2c012906644826843aa300ac3136fce7
+  - enabled: 1
+    path: Assets/Scenes/Desert.unity
+    guid: 623a41a8d1b39df458d9fb8230fc6a39
+  - enabled: 1
+    path: Assets/Scenes/Glacier.unity
+    guid: ddd22abd413be9f4193c45f0c4c648c9
   m_configObjects: {}

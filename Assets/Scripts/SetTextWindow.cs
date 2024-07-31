@@ -23,7 +23,7 @@ public class SetText : MonoBehaviour
             IsShowed = true;
 
             textController.SetTextList(textList);
-            textController.SetImage(settingImage);
+            if (settingImage != null) textController.SetImage(settingImage);
 
             StartCoroutine(textController.DrawTextWindow());
         }
