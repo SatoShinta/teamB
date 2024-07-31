@@ -2645,10 +2645,10 @@ RectTransform:
   - {fileID: 1876429675}
   m_Father: {fileID: 314270869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 394.5961, y: 86.493}
-  m_SizeDelta: {x: -1226.0302, y: -697.46}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139650951
 MonoBehaviour:
@@ -2663,7 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.83137256}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2701,6 +2701,7 @@ GameObject:
   - component: {fileID: 160370770}
   - component: {fileID: 160370772}
   - component: {fileID: 160370771}
+  - component: {fileID: 160370773}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -2865,6 +2866,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &160370773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160370767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u623B\u308C\u306A\u304F\u306A\u3063\u3061\u3083\u3063\u305F\u2026\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &164597189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,11 +4625,11 @@ GameObject:
   - component: {fileID: 314270873}
   m_Layer: 5
   m_Name: ImageWindow
-  m_TagString: ImageWindow
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &314270869
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5212,6 +5228,7 @@ GameObject:
   - component: {fileID: 388540687}
   - component: {fileID: 388540689}
   - component: {fileID: 388540688}
+  - component: {fileID: 388540690}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -5376,6 +5393,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &388540690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388540684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3042\u305D\u3053\u306B\u304A\u5B9D\u304C\u3042\u308B\uFF01\\r\\n\u3069\u3046\u3057\u305F\u3089\u53D6\u308C\u308B\u304B\u306A\u2026\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &392931553
 GameObject:
   m_ObjectHideFlags: 0
@@ -8168,6 +8200,7 @@ GameObject:
   - component: {fileID: 513371202}
   - component: {fileID: 513371204}
   - component: {fileID: 513371203}
+  - component: {fileID: 513371205}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -8332,6 +8365,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &513371205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513371199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3053\u306E\u3078\u3093\u306F\u3042\u3076\u306A\u3044\u306A\u3042\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8968,7 +9016,7 @@ GameObject:
   - component: {fileID: 545149067}
   m_Layer: 5
   m_Name: CharaImage
-  m_TagString: CharaImage
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8989,7 +9037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -393, y: -85}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545149067
@@ -10976,6 +11024,7 @@ GameObject:
   - component: {fileID: 580895112}
   - component: {fileID: 580895114}
   - component: {fileID: 580895113}
+  - component: {fileID: 580895115}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -11140,6 +11189,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &580895115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580895109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3082\u3069\u308C\u306A\u304F\u306A\u3063\u3061\u3083\u3063\u305F\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &581285252
 GameObject:
   m_ObjectHideFlags: 0
@@ -11664,6 +11728,7 @@ GameObject:
   - component: {fileID: 612040593}
   - component: {fileID: 612040592}
   - component: {fileID: 612040591}
+  - component: {fileID: 612040595}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -11828,6 +11893,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &612040595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612040589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3084\u3063\u305F\u30FC\uFF01\\r\\n\u304A\u5B9D\u30B2\u30C3\u30C8\uFF01\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &615079990
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,6 +12274,7 @@ GameObject:
   - component: {fileID: 622111800}
   - component: {fileID: 622111799}
   - component: {fileID: 622111798}
+  - component: {fileID: 622111802}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -12358,6 +12439,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &622111802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622111796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u304A\u5B9D\u304C\u3042\u308B\uFF01\\r\\n\u6C17\u3092\u3064\u3051\u3066\u3059\u3059\u3082\u3046\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &627746372
 GameObject:
   m_ObjectHideFlags: 0
@@ -17927,8 +18023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.5, y: 5.5}
-  m_SizeDelta: {x: 960, y: 280}
+  m_AnchoredPosition: {x: 0, y: 5.5}
+  m_SizeDelta: {x: 840, y: 280}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024962292
 MonoBehaviour:
@@ -17950,10 +18046,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText
+  m_text: TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4fbcbd582f6409b43b01112c1f55f6be, type: 2}
+  m_sharedMaterial: {fileID: -5344002468090508490, guid: 4fbcbd582f6409b43b01112c1f55f6be, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21000,6 +21096,7 @@ GameObject:
   - component: {fileID: 1170765373}
   - component: {fileID: 1170765375}
   - component: {fileID: 1170765374}
+  - component: {fileID: 1170765376}
   m_Layer: 0
   m_Name: asiba2(Clone)
   m_TagString: Ground
@@ -21163,6 +21260,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1170765376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170765370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3042\u3068\u3082\u3046\u5C11\u3057\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1184384238
 GameObject:
   m_ObjectHideFlags: 0
@@ -21176,6 +21288,7 @@ GameObject:
   - component: {fileID: 1184384242}
   - component: {fileID: 1184384241}
   - component: {fileID: 1184384240}
+  - component: {fileID: 1184384244}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -21340,6 +21453,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1184384244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184384238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3084\u3063\u305F\u30FC\uFF01\\r\\n\u304A\u5B9D\u30B2\u30C3\u30C8\uFF01\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1188885078
 GameObject:
   m_ObjectHideFlags: 0
@@ -25047,6 +25175,7 @@ GameObject:
   - component: {fileID: 1336584384}
   - component: {fileID: 1336584386}
   - component: {fileID: 1336584385}
+  - component: {fileID: 1336584387}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -25211,6 +25340,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1336584387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336584381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u304A\u5B9D\u304C\u3042\u308B\uFF01\\r\\n\u3068\u308A\u306B\u884C\u3053\u3046\uFF01\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1341635231
 GameObject:
   m_ObjectHideFlags: 0
@@ -30820,6 +30964,7 @@ GameObject:
   - component: {fileID: 1550878872}
   - component: {fileID: 1550878874}
   - component: {fileID: 1550878873}
+  - component: {fileID: 1550878875}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -30984,6 +31129,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1550878875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550878869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u8FF7\u3063\u3061\u3083\u3046\u306A\u3042\u2026\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1561361422
 GameObject:
   m_ObjectHideFlags: 0
@@ -37540,6 +37700,7 @@ GameObject:
   - component: {fileID: 1875549636}
   - component: {fileID: 1875549638}
   - component: {fileID: 1875549637}
+  - component: {fileID: 1875549639}
   m_Layer: 0
   m_Name: asiba1(Clone)
   m_TagString: Ground
@@ -37704,6 +37865,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1875549639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875549633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u3084\u3063\u305F\u30FC\uFF01\\r\\n\u304A\u5B9D\u30B2\u30C3\u30C8\uFF01\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1876429674
 GameObject:
   m_ObjectHideFlags: 0
@@ -37717,7 +37893,7 @@ GameObject:
   - component: {fileID: 1876429676}
   m_Layer: 5
   m_Name: CharacterMessage
-  m_TagString: CharaMessage
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37738,8 +37914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0002861, y: -0.00014496}
-  m_SizeDelta: {x: 363.52, y: 262.4}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1284.1113, y: 262.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1876429676
 MonoBehaviour:
@@ -37761,17 +37937,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TextTextTextTextTextTextTextTextText
+  m_text: TextTextText
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4fbcbd582f6409b43b01112c1f55f6be, type: 2}
+  m_sharedMaterial: {fileID: -5344002468090508490, guid: 4fbcbd582f6409b43b01112c1f55f6be, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -37788,15 +37964,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 150
+  m_fontSizeBase: 150
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -37824,7 +38000,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.12329078, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -38199,6 +38375,7 @@ GameObject:
   - component: {fileID: 1882078458}
   - component: {fileID: 1882078460}
   - component: {fileID: 1882078459}
+  - component: {fileID: 1882078461}
   m_Layer: 0
   m_Name: asiba2(Clone)
   m_TagString: Ground
@@ -38362,6 +38539,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1882078461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882078455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u8FF7\u3063\u3061\u3083\u3046\u306A\u2026\u3000"
+  settingImage: {fileID: 0}
 --- !u!1 &1892611948
 GameObject:
   m_ObjectHideFlags: 0
@@ -38445,8 +38637,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0ab58b7ee0a904ebaf979f07b155b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageWindow: {fileID: 314270868}
   _text: {fileID: 1024962292}
+  defaultText:
+  - "\u304A\u5B9D\u3092\u305C\u3093\u3076\u3042\u3064\u3081\u3066\\r\\n\u30B4\u30FC\u30EB\u3092\u76EE\u6307\u305D\u3046\uFF01
+    \u3000"
+  imageWindow: {fileID: 314270868}
   characterMessage: {fileID: 1876429676}
 --- !u!114 &1893713739
 MonoBehaviour:
@@ -38462,7 +38657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 1024962292}
   defaultImage: {fileID: 0}
-  delayDuration: 0
+  delayDuration: 0.03
 --- !u!114 &1893713740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38476,7 +38671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingImage: {fileID: 0}
-  settingMessage: 
+  settingMessage: "\u30B3\u30FC\u30B9\u30AF\u30EA\u30A2\uFF01"
+  imageWindow: {fileID: 314270868}
+  _image: {fileID: 545149067}
+  _message: {fileID: 1876429676}
 --- !u!1 &1909677789
 GameObject:
   m_ObjectHideFlags: 0
@@ -38667,6 +38865,7 @@ GameObject:
   - component: {fileID: 1933474878}
   - component: {fileID: 1933474880}
   - component: {fileID: 1933474879}
+  - component: {fileID: 1933474881}
   m_Layer: 0
   m_Name: asiba2(Clone)
   m_TagString: Ground
@@ -38830,6 +39029,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &1933474881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933474875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beec37bfb8688fe478f22839a27128d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textList:
+  - "\u30B4\u30FC\u30EB\u304C\u898B\u3048\u3066\u304D\u305F\uFF01\u3000"
+  settingImage: {fileID: 0}
 --- !u!1001 &1945206063
 PrefabInstance:
   m_ObjectHideFlags: 0

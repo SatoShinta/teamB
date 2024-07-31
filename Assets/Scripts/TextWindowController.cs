@@ -39,12 +39,10 @@ public class TextWindowController : MonoBehaviour
     {
         for (int i = 0; i < _textList.Count; i++)
         {
-            var textLength = _textList[i].Length;
-
-            _text.text = _textList[i];
+            _text.text = _textList[i].Replace("\\r", "\r").Replace("\\n", "\n");
             _text.maxVisibleCharacters = 0;
 
-            for (var j = 0; j < textLength; j++)
+            for (var j = 0; j < _textList[i].Length; j++)
             {
                 _text.maxVisibleCharacters = j;
 

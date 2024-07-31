@@ -14,7 +14,7 @@ public class EndGame : MonoBehaviour
         }  
     }
 
-    void Gameowari()
+    public void Gameowari()
     {
         Application.Quit();
     }
